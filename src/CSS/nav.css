@@ -1,0 +1,17 @@
+.navbar {
+  background: #0f796b;
+}
+.link-unstyled {
+  text-decoration: none;
+}
+.btnNav {
+  background-color: transparent;
+}
+.btnNav:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.hamburger {
+  border: none;
+}
