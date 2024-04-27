@@ -1,0 +1,185 @@
+.txtcolor0 {
+  color: #ffffffbf;
+  font-size: 35px;
+}
+
+.txtcolor2 {
+  color: rgba(255, 186, 0, 1);
+}
+
+.txtstyle0 {
+  font-weight: 400;
+}
+
+.txtstyle2 {
+  font-size: 50px;
+}
+
+.bgimg {
+  position: relative;
+  background-image: url("../Photos/front.jpeg");
+  z-index: 0;
+  /* Ensure the pseudo-element is behind the content */
+  border-radius: 0px 0px 30px 30px; /* Apply border radius */
+  overflow: hidden; /* Hide overflow to respect border radius */
+}
+
+.bgimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  filter: brightness(0.5);
+  z-index: -1;
+  /* Place the pseudo-element behind the content */
+  border-radius: 0px 0px 30px 30px; /* Add border radius only to the top */
+}
+
+/* Add your existing styles here */
+
+
+.btnJoinUs {
+  background-color: transparent;
+  width: 120px;
+  /* Set width to auto to fit content */
+  justify-content: left;
+  /* Align content to the left */
+  padding-right: 35px;
+  /* Add padding to the right to create space for the circle */
+  position: relative;
+  /* Position relative for absolute positioning of the circle */
+  border-color: rgba(255, 186, 0, 1);
+}
+
+.btnJoinUs:hover {
+  background-color: rgba(255, 186, 0, 1);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.circle2 {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  /* Adjust this value to position the circle */
+  transform: translateY(-50%);
+  width: 30px;
+  /* Diameter of the circle */
+  height: 30px;
+  /* Diameter of the circle */
+  background-color:  rgba(255, 186, 0, 1);
+  border-radius: 50%;
+}
+
+.circle2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 10px;
+  /* Size of the arrow */
+  height: 10px;
+  /* Size of the arrow */
+  border-top: 2px solid black;
+  /* Color and thickness of the arrow */
+  border-right: 2px solid black;
+  /* Color and thickness of the arrow */
+}
+
+.btnDonate {
+  background-color: rgba(255, 186, 0, 1);
+  width: 120px;
+  /* Set width to auto to fit content */
+  justify-content: left;
+  /* Align content to the left */
+  padding-right: 35px;
+  /* Add padding to the right to create space for the circle */
+  position: relative;
+  /* Position relative for absolute positioning of the circle */
+}
+
+.btnDonate:hover {
+  background-color: rgba(255, 186, 0, 1);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.circle1 {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  /* Adjust this value to position the circle */
+  transform: translateY(-50%);
+  width: 30px;
+  /* Diameter of the circle */
+  height: 30px;
+  /* Diameter of the circle */
+  background-color: white;
+  border-radius: 50%;
+}
+
+.circle1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 10px;
+  /* Size of the arrow */
+  height: 10px;
+  /* Size of the arrow */
+  border-top: 2px solid black;
+  /* Color and thickness of the arrow */
+  border-right: 2px solid black;
+  /* Color and thickness of the arrow */
+}
+
+@media (max-width: 1030px) {
+  .txtcolor0 {
+    color: #ffffffbf;
+    font-size: 25px;
+  }
+
+  .txtstyle2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 775px) {
+  .txtcolor0 {
+    color: #ffffffbf;
+    font-size: 30px;
+  }
+
+  .txtstyle2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .txtcolor0 {
+    color: #ffffffbf;
+    font-size: 20px;
+  }
+
+  .txtstyle2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 385px) {
+  .txtcolor0 {
+    color: #ffffffbf;
+    font-size: 15px;
+  }
+
+  .txtstyle2 {
+    font-size: 20px;
+  }
+}
