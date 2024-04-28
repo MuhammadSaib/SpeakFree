@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './carousel.css';
+import '../CSS/home.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
+
 import { FaInfoCircle, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const PersonalityCarousel = ({ personalities }) => {
+const PersonalityCarousel = ({ personalities,team,bgColor,textColor,cartColor,title,titleColor}) => {
+    const [numb,setNumb] = useState(0);
+    useEffect(()=>{
+        if(personalities){
+            setNumb(4);
+        }
+        if(team){
+            setNumb(3);
+        }
+    },[])
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     window.addEventListener('resize', () => {
     setWindowWidth(window.innerWidth);
@@ -16,7 +26,7 @@ var settings = {
     nextArrow: <NextArrow />,
     infinite: false,
     speed: 500,
-    slidesToShow: windowWidth > 768 ? 4 : (windowWidth === 768 ? 3 : 1),
+    slidesToShow: windowWidth > 768 ? numb : (windowWidth === 768 ? 3 : 1),
     slidesToScroll:windowWidth > 768 ? 1 : (windowWidth === 768 ? 1 : 1), 
   };
   function PrevArrow(props) {
@@ -46,29 +56,41 @@ var settings = {
   }
 
   return (
-    <div className="container-fluid pb-5 pt-5" style={{backgroundColor: '#1E1E1E'}}>
-    <div className="mt-5 font-family mb-5 text-center pt-5 pb-5" style={{color:'#D9D6C0',fontWeight:500,fontSize:'46px'}}>
-        Famous Personalities that stutter
+    <div className="container-fluid pb-5 pt-5" style={{backgroundColor: bgColor,borderRadius: team ? '40px' : '0'}}>
+    <div className=" font-family mb-5 text-center pt-5 pb-5 title-font" style={{color:titleColor,fontWeight:500}}>
+        {title}
     </div>
-    <div className="container">
-        <div className="row pt-5 justify-content-center">
+    <div className="container pb-5">
+        <div className="row pt-2 justify-content-center">
         <div className="col-12">
             <Slider {...settings}>
-                {personalities.map((personality,index)=>(
-                <div className='row m-0 p-0justify-content-center'>
-                 <div className="" style={{ backgroundColor: '#353535', borderRadius: '20px' }}>
+                {personalities && personalities.map((personality,index)=>(
+                <div className='row m-0 p-0justify-content-center' key={index}>
+                 <div className="" style={{ backgroundColor: cartColor, borderRadius: '20px' }}>
                     <div className="py-3">
                     <img src={personality.img} style={{ borderRadius: '20px' }} className='img-fluid' alt="" />
                     <div className="row mt-2">
                         <div className="col-6">
-                        <p className="p-0 m-0 text-white">{personality.name}</p>
-                        <p className="p-0 m-0 text-white">{personality.description}</p>
+                        <p className="p-0 m-0 " style={{color:textColor}}>{personality.name}</p>
+                        <p className="p-0 m-0 " style={{color:textColor}}>{personality.description}</p>
                         </div>
-                        <div className="text-end text-white col-6 pt-3">
+                        <div className="text-end col-6 pt-3" style={{color:textColor}}>
                           <FaInfoCircle />
                         </div>
                     </div>
                     </div>
+                </div>
+                </div>
+                ))}
+                 {team && team.map((personality,index)=>(
+                <div className='row m-0 p-0justify-content-center' key={index}>
+                 <div className="" style={{ backgroundColor: cartColor, borderRadius: '20px' }}>
+                    <div className="py-3">
+                    <img src={personality.img} style={{ borderRadius: '20px' }} className='img-fluid' alt="" />
+                    </div>
+                </div>
+                <div className="text-center mt-3"  style={{color:textColor}}>
+                    {personality.name}
                 </div>
                 </div>
                 ))}

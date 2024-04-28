@@ -2,13 +2,14 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/home.css';
 import { Container, Button } from "react-bootstrap";
+import { useState, useEffect } from 'react';
 
-const Front = () => {
+const Front = ({flag}) => {
     return (
         // Pakistan’s FirstOrganizationfor Stammering Awareness & Research
                     
         <Container fluid className="row bgimg mt-4 mt-lg-5 m-0 p-0  ">
-            <div className="col-12 mt-5 pt-5 ">
+            {flag && <div className="col-12 mt-5 pt-5 font-family ">
                 <div className="row">
                     <div className="col-12 ps-md-5 mt-md-4 pt-md-4 txtcolor0">
                         Welcome to <span className="text-white txtstyle0">SpeakFree</span>
@@ -31,7 +32,14 @@ const Front = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>}
+            {!flag && <div className=" font-family text-center h1 mt-5 pt-5 pb-5 font-size" >
+                <div className="container-fluid mt-5 mb-5 pt-5 pb-5">
+                    <div className="container pt-5 mt-5 pb-5 mb-5 text-white">
+                       About Us
+                    </div>
+                </div>
+            </div>}
         </Container>
     );
 };

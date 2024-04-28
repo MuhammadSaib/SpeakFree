@@ -183,3 +183,37 @@
     font-size: 20px;
   }
 }
+.font-size {
+  font-size: 72px; /* Default font size for medium-sized screens */
+}
+.partner-font{
+  font-size: 50px;
+}
+.title-font{
+  font-size: 46px;
+}
+/* Media query for screens larger than 768px */
+@media (min-width: 769px) {
+  .font-size {
+    font-size: 80px; /* Larger font size for screens wider than 768px */
+  }
+  .partner-font{
+    font-size: 60px;
+  }
+  .title-font{
+    font-size: 58px;
+  }
+}
+
+/* Media query for screens smaller than or equal to 425px */
+@media (max-width: 425px) {
+  .font-size {
+    font-size: 40px; /* Smaller font size for screens narrower than or equal to 425px */
+  }
+  .partner-font{
+    font-size: 35px;
+  }
+  .title-font{
+    font-size: 30px;
+  }
+}

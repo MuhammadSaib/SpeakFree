@@ -24,7 +24,7 @@ const CustomNavbar = () => {
                     <Nav className="d-none d-md-flex align-items-center justify-content-center col-md-7 col-lg-8 mt-md-2 mt-lg-0">
                         <ul className="d-flex align-items-center justify-content-center list-unstyled mb-2">
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/" className="text-white link-unstyled">Home</Link></li>
-                            <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/about" className="text-white link-unstyled">About Us</Link></li>
+                            <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/about-us" className="text-white link-unstyled">About Us</Link></li>
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/resources" className="text-white link-unstyled">Resources</Link></li>
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/partners" className="text-white link-unstyled">Partners</Link></li>
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/join" className="text-white link-unstyled">Join Us</Link></li>
@@ -43,7 +43,7 @@ const CustomNavbar = () => {
                     <Container className="d-md-none p-0 pt-2 ">
                         <Nav className="d-flex align-items-center justify-content-center bg-dark text-white w-100">
                             <Link to="/" className="link-unstyled text-white">Home</Link>
-                            <Link to="/aboutus" className="link-unstyled text-white">About Us</Link>
+                            <Link to="/about-us" className="link-unstyled text-white">About Us</Link>
                             <Link to="/resources" className="link-unstyled text-white">Resources</Link>
                             <Link to="/partners" className="link-unstyled text-white">Partners</Link>
                             <Link to="/joinus" className="link-unstyled text-white">Join Us</Link>
