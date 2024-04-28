@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './carousel.css';
+import '../CSS/carousel.css';
 
 const Carousel = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -39,7 +39,7 @@ const Carousel = ({ slides }) => {
     <div className="carousel">
       <div className="carousel-inner">
         {slides.map((slide, index) => (
-          <div key={index} style={{ backgroundColor: slide.bgColor }} className={`min-height pt-3  carousel-item ${index === currentSlide ? 'active' : ''}`}>
+          <div key={index} style={{ backgroundColor: slide.bgColor }} className={`min-height font-family pt-3  carousel-item ${index === currentSlide ? 'active' : ''}`}>
             <div className="slide-content container position-relative ">
                 <div className="row justify-content-center">
                     <div className="col-12">

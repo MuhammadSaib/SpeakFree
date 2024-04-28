@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './carousel.css';
+import '../CSS/carousel.css';
 const Sponsors =({array})=>{
     if (!Array.isArray(array)) {
         console.error('Invalid array passed to Sponsors component');
@@ -16,8 +15,8 @@ const Sponsors =({array})=>{
     return (
         <div className="container-fluid" style={{width:'100%',overflowX:'hidden',minHeight:'100px'}}>
              <marquee>
-            {array.map((element)=>(
-                <img style={{ marginLeft: margin, marginRight: margin }} src={element} width="100px"  alt="" />
+            {array.map((element,index)=>(
+                <img style={{ marginLeft: margin, marginRight: margin }} key={index} src={element} width="100px"  alt="" />
                 ))}
             </marquee>
          </div>

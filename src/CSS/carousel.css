@@ -73,17 +73,17 @@
   }
  @media (max-width: 425px) {
     .min-height{
-      min-height: 600px;
+      min-height: 650px;
     }
   }
   @media (min-width: 426px)  and (max-width:770px) {
     .min-height{
-      min-height: 350px;
+      min-height: 380px;
     }
   }
   @media (min-width: 770px)  and (max-width:9999px) {
     .min-height{
-      min-height: 300px;
+      min-height: 350px;
     }
   }
  
@@ -102,7 +102,7 @@
     margin: 0 10px;
 }
 .font-family{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: Arial, Helvetica, sans-serif;;
 }
 .marquee-container {
     white-space: nowrap;
