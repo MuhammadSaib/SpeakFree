@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/carousel.css';
 const Vision = () =>{
    return(
-    <div className="m-0  pb-5 bg-vision">
+    <div className="m-0 pb-5 bg-vision">
       <div className='container'>
-         <div className="text-center title-font mt-5 pt-5 pb-3">
+         <div className="text-center title-font mt-0 pt-5 pb-3">
             Our Vision
          </div>
          <div className="mt-5 text-center">
