@@ -128,3 +128,6 @@
       transform: translateX(-50%); /* Adjust based on the number of images */
     }
   }  
+.bg-vision{
+  background-color: #eeebd3;
+}

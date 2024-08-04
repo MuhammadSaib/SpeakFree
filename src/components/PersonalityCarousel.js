@@ -56,7 +56,7 @@ var settings = {
   }
 
   return (
-    <div className="container-fluid pb-5 pt-5" style={{backgroundColor: bgColor,borderRadius: team ? '40px' : '0'}}>
+    <div className="container-fluid  m-0 pb-5 pt-5" style={{backgroundColor: bgColor,borderRadius: team ? '40px' : '0'}}>
     <div className=" font-family mb-5 text-center pt-5 pb-5 title-font" style={{color:titleColor,fontWeight:500}}>
         {title}
     </div>
@@ -84,8 +84,8 @@ var settings = {
                 ))}
                  {team && team.map((personality,index)=>(
                 <div className='row m-0 p-0justify-content-center' key={index}>
-                 <div className="" style={{ backgroundColor: cartColor, borderRadius: '20px' }}>
-                    <div className="py-3">
+                 <div className="p-0" style={{ backgroundColor: cartColor, borderRadius: '20px' }}>
+                    <div className="">
                     <img src={personality.img} style={{ borderRadius: '20px' }} className='img-fluid' alt="" />
                     </div>
                 </div>
