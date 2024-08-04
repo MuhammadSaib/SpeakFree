@@ -19,7 +19,7 @@ const CustomNavbar = () => {
                 <Container className="d-flex align-items-center justify-content-between">
                     <div className="col-5 col-md-3 col-lg-2">
                         <img src={logo} width={40} height={40} alt="Logo" className="rounded-circle" />
-                        <span className="ms-2 mt-md-3 text-white">SpeakFree</span>
+                        <span className="ms-2 mt-md-3 logo-color">SpeakFree</span>
                     </div>
                     <Nav className="d-none d-md-flex align-items-center justify-content-center col-md-7 col-lg-8 mt-md-2 mt-lg-0">
                         <ul className="d-flex align-items-center justify-content-center list-unstyled mb-2">
@@ -31,7 +31,7 @@ const CustomNavbar = () => {
                         </ul>
                     </Nav>
                     <div className="col-4 col-md-2 col-lg-2 d-flex align-items-center justify-content-end">
-                        <Button className="btnNav rounded-5 border-white btn-sm">Contact Us</Button>
+                        <Button className="btnNav rounded-5 btn-sm">Contact Us</Button>
                     </div>
                     <div className="col-3 d-md-none d-flex align-items-center justify-content-center">
                         <Button onClick={toggleMenu} className="btn-sm btnNav hamburger ">
@@ -42,11 +42,11 @@ const CustomNavbar = () => {
                 {isOpen && (
                     <Container className="d-md-none p-0 pt-2 ">
                         <Nav className="d-flex align-items-center justify-content-center bg-dark text-white w-100">
-                            <Link to="/" className="link-unstyled text-white">Home</Link>
-                            <Link to="/about-us" className="link-unstyled text-white">About Us</Link>
-                            <Link to="/resources" className="link-unstyled text-white">Resources</Link>
-                            <Link to="/partners" className="link-unstyled text-white">Partners</Link>
-                            <Link to="/joinus" className="link-unstyled text-white">Join Us</Link>
+                            <Link to="/" className="link-unstyled ">Home</Link>
+                            <Link to="/about-us" className="link-unstyled ">About Us</Link>
+                            <Link to="/resources" className="link-unstyled">Resources</Link>
+                            <Link to="/partners" className="link-unstyled">Partners</Link>
+                            <Link to="/joinus" className="link-unstyled">Join Us</Link>
                         </Nav>
                     </Container>
                 )}
