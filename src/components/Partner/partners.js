@@ -3,11 +3,11 @@ import '../../pages/Home/home.css';
 
 const Partners = ({array}) =>{
     return(
-       <div className="container mt-5 pt-5 pb-5">
-        <div className=" font-family text-center pb-5 mb-5 partner-font" >
-                Our Partners
+       <div className="m-0 pt-5  pb-5">
+        <div className=" font-family text-center pb-5 mb-5 text-white partner-font" >
+                Our <span className='textAbout'>Partners</span>
         </div>
-        <div className="row pb-5">
+        <div className="row pb-5 m-0">
             {array.map((element,index)=>(
                <div className="col-lg-2 col-sm-4 col-4 col-md-3" key={index} >
                 <div className="row justify-content-center">

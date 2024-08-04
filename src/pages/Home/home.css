@@ -2,9 +2,12 @@
   color: #ffffffbf;
   font-size: 35px;
 }
-
+body{
+  padding:0;
+  margin:0;
+}
 .txtcolor2 {
-  color: rgba(255, 186, 0, 1);
+  color: #c3f59c;;
 }
 
 .txtstyle0 {
@@ -47,6 +50,7 @@
 .btnJoinUs {
   background-color: transparent;
   width: 120px;
+  color:white;
   /* Set width to auto to fit content */
   justify-content: left;
   /* Align content to the left */
@@ -54,13 +58,14 @@
   /* Add padding to the right to create space for the circle */
   position: relative;
   /* Position relative for absolute positioning of the circle */
-  border-color: rgba(255, 186, 0, 1);
+  border-color: #c3f59c;
 }
 
 .btnJoinUs:hover {
-  background-color: rgba(255, 186, 0, 1);
+  background-color: #c3f59c;
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  color:black;
 }
 .circle2 {
   position: absolute;
@@ -72,7 +77,7 @@
   /* Diameter of the circle */
   height: 30px;
   /* Diameter of the circle */
-  background-color:  rgba(255, 186, 0, 1);
+  background-color:  #c3f59c;
   border-radius: 50%;
 }
 
@@ -93,21 +98,24 @@
 }
 
 .btnDonate {
-  background-color: rgba(255, 186, 0, 1);
+  background-color: #c3f59c;
   width: 120px;
+  color:black;
   /* Set width to auto to fit content */
   justify-content: left;
   /* Align content to the left */
   padding-right: 35px;
   /* Add padding to the right to create space for the circle */
   position: relative;
+  border:none;
   /* Position relative for absolute positioning of the circle */
 }
 
 .btnDonate:hover {
-  background-color: rgba(255, 186, 0, 1);
+  background-color: #c3f59c;
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  color:black;
 }
 
 .circle1 {
@@ -216,4 +224,10 @@
   .title-font{
     font-size: 30px;
   }
+}
+.textAbout{
+  color:#b1dc8e;
+}
+.bgPartners{
+  background-color:#173730;
 }

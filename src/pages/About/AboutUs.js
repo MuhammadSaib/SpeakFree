@@ -13,10 +13,10 @@ const About = () =>{
         {name:'Saib5', img:'slide1a.jpeg',description:'hey this is my description.......'},
     ]
     return(
-        <div className="">
-        <Front flag={false} title="About Us"/>
+        <div className="m-0 p-0 bgPartners">
+        <Front flag={false}/>
         <Partners array={array}/>
-        <PersonalityCarousel personalities={false} team={team} bgColor={'#107063'} textColor={'white'} cartColor={'white'} title={'Meet the Team'} titleColor={'white'}/>
+        <PersonalityCarousel personalities={false} team={team} bgColor={'#c2f499'} textColor={'black'} cartColor={'white'} title={'Meet the Team'} titleColor={'black'}/>
         <Vision/>
         </div>
         

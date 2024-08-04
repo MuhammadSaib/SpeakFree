@@ -11,8 +11,8 @@ const Home = ()=>{
           description2:"Living with stammering can lead to social stigma and discrimination, impacting self-esteem. However, it's crucial to understand that stammering doesn't reflect intelligence or capability.",
           img1:'slide1a.jpeg',
           img2:'slide1b.jpeg',
-          bgColor:'#107063',
-          textColor:'white',
+          bgColor:'#c2f499',
+          textColor:'black',
           flag:true
         },
         {
@@ -21,8 +21,8 @@ const Home = ()=>{
           description2:"Living with stammering can lead to social stigma and discrimination, impacting self-esteem. However, it's crucial to understand that stammering doesn't reflect intelligence or capability.",
           img1:'slide1a.jpeg',
           img2:'slide1b.jpeg',
-          bgColor:'#EFBF3C',
-          textColor:'black',
+          bgColor:'#173730',
+          textColor:'white',
           flag:false
         },
         {
@@ -31,7 +31,7 @@ const Home = ()=>{
           description2:"Living with stammering can lead to social stigma and discrimination, impacting self-esteem. However, it's crucial to understand that stammering doesn't reflect intelligence or capability.",
           img1:'slide1a.jpeg',
           img2:'slide1b.jpeg',
-          bgColor:'#EEEBD3',
+          bgColor:'#eeebd3',
           textColor:'black',
           flag:true
         }

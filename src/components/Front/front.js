@@ -1,10 +1,10 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../pages/Home/home.css';
+import '../CSS/home.css';
 import { Container, Button } from "react-bootstrap";
 import { useState, useEffect } from 'react';
 
-const Front = ({flag,title}) => {
+const Front = ({flag}) => {
     return (
         // Pakistan’s FirstOrganizationfor Stammering Awareness & Research
                     
@@ -36,7 +36,7 @@ const Front = ({flag,title}) => {
             {!flag && <div className=" font-family text-center h1 mt-5 pt-5 pb-5 font-size" >
                 <div className="container-fluid mt-5 mb-5 pt-5 pb-5">
                     <div className="container pt-5 mt-5 pb-5 mb-5 text-white">
-                       {title}
+                       About Us
                     </div>
                 </div>
             </div>}
