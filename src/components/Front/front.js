@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../CSS/home.css';
+import '../../pages/Home/home.css';
 import { Container, Button } from "react-bootstrap";
 import { useState, useEffect } from 'react';
 
