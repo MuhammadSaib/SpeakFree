@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import '../CSS/carousel.css';
+import '../Carousel/carousel.css';
 const Sponsors =({array})=>{
     if (!Array.isArray(array)) {
         console.error('Invalid array passed to Sponsors component');

@@ -1,8 +1,8 @@
 
-import Front from './Component/front.js';
-import Carousel from './components/carousel';
-import PersonalityCarousel from './components/PersonalityCarousel';
-import Sponsors from './components/sponsors';
+import Front from '../../components/Front/front.js';
+import Carousel from '../../components/Carousel/carousel.js';
+import PersonalityCarousel from '../../components/PersonalityCarousel/PersonalityCarousel.js';
+import Sponsors from '../../components/Sponsors/sponsors.js';
 const Home = ()=>{
     const data =[
         {

@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import '../CSS/carousel.css';
+import '../Carousel/carousel.css';
 const Vision = () =>{
    return(
     <div className="container pb-5">
