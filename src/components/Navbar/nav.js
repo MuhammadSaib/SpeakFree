@@ -3,8 +3,8 @@ import { Navbar, Button, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi'; // Importing a hamburger menu icon
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../Photos/logo.png';
-import '../CSS/nav.css';
+import logo from '../../Photos/logo.png';
+import './nav.css';
 
 const CustomNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +17,9 @@ const CustomNavbar = () => {
         <header>
             <Navbar expand="md" className="navbar pt-lg-3 pb-lg-3 rounded-bottom-4" fixed="top">
                 <Container className="d-flex align-items-center justify-content-between">
-                    <div className="col-5 col-md-3 col-lg-2">
+                    <div className="col-5 col-md-3 col-lg-2 flex">
                         <img src={logo} width={40} height={40} alt="Logo" className="rounded-circle" />
+                        
                         <span className="ms-2 mt-md-3 logo-color">SpeakFree</span>
                     </div>
                     <Nav className="d-none d-md-flex align-items-center justify-content-center col-md-7 col-lg-8 mt-md-2 mt-lg-0">
@@ -26,7 +27,7 @@ const CustomNavbar = () => {
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/" className="text-white link-unstyled">Home</Link></li>
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/about-us" className="text-white link-unstyled">About Us</Link></li>
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/resources" className="text-white link-unstyled">Resources</Link></li>
-                            <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/partners" className="text-white link-unstyled">Partners</Link></li>
+                            <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/speech-therapy" className="text-white link-unstyled">Speech Therapy</Link></li>
                             <li className="ms-md-2 me-md-2 ms-lg-4 me-lg-4 mt-lg-1"><Link to="/join" className="text-white link-unstyled">Join Us</Link></li>
                         </ul>
                     </Nav>

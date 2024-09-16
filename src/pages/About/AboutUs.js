@@ -1,7 +1,7 @@
-import Front from "./Component/front";
-import PersonalityCarousel from "./components/PersonalityCarousel";
-import Partners from "./components/partners";
-import Vision from "./components/vision";
+import Front from "../../components/Front/front";
+import PersonalityCarousel from "../../components/PersonalityCarousel/PersonalityCarousel";
+import Partners from "../../components/Partner/partners";
+import Vision from "../../components/Vision/vision";
 
 const About = () =>{
     const array=['/cocacola.webp','levis.png','NBA.png','timhortans.png','/cocacola.webp','levis.png','NBA.png','timhortans.png','/cocacola.webp','levis.png','NBA.png','timhortans.png','/cocacola.webp','levis.png','NBA.png','timhortans.png','/cocacola.webp','levis.png','NBA.png','timhortans.png'];
