@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../pages/Home/home.css';
+import '../CSS/home.css';
 import { Container, Button } from "react-bootstrap";
 import { useState, useEffect } from 'react';
 
@@ -20,12 +20,12 @@ const Front = ({flag}) => {
                     <div className="col-12 col-md-8 col-lg-6 col-xl-5 mb-5 pb-5">
                         <div className="row ms-md-3 ms-lg-2">
                             <div className="col-4 col-md-3 col-lg-3 ms-lg-3 ">
-                                <Button className="btnDonate rounded-5 text-black position-relative">Donate
+                                <Button className="btnDonate rounded-5  position-relative">Donate
                                     <span className="circle1"></span>
                                 </Button>
                             </div>
                             <div className="col-4 col-md-3 col-lg-2 ms-3 ms-md-3 ms-lg-4 ms-xl-0">
-                                <Button className="btnJoinUs rounded-5 text-white position-relative">Join Us
+                                <Button className="btnJoinUs rounded-5 position-relative">Join Us
                                     <span className="circle2"></span>
                                 </Button>
                             </div>
@@ -35,8 +35,8 @@ const Front = ({flag}) => {
             </div>}
             {!flag && <div className=" font-family text-center h1 mt-5 pt-5 pb-5 font-size" >
                 <div className="container-fluid mt-5 mb-5 pt-5 pb-5">
-                    <div className="container pt-5 mt-5 pb-5 mb-5 text-white">
-                       About Us
+                    <div className="container pt-5 mt-5 pb-5 mb-5 textAbout">
+                       About<span className='text-white ms-4'>Us</span>
                     </div>
                 </div>
             </div>}
