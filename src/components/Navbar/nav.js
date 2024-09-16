@@ -20,7 +20,7 @@ const CustomNavbar = () => {
                     <div className="col-5 col-md-3 col-lg-2 flex">
                         <img src={logo} width={40} height={40} alt="Logo" className="rounded-circle" />
                         
-                        <span className="ms-2 mt-md-3 logo-color">SpeakFree</span>
+                        <span className="my-auto ml-2 logo-color">SpeakFree</span>
                     </div>
                     <Nav className="d-none d-md-flex align-items-center justify-content-center col-md-7 col-lg-8 mt-md-2 mt-lg-0">
                         <ul className="d-flex align-items-center justify-content-center list-unstyled mb-2">

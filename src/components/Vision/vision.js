@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import '../Carousel/carousel.css';
+import '../../pages/Home/home.css';
 const Vision = () =>{
    return(
     <div className="m-0 pb-5 bg-vision">

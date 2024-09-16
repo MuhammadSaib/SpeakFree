@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../CSS/home.css';
+import '../pages/Home/home.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 

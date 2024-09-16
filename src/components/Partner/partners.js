@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../../pages/Home/home.css';
-
 const Partners = ({array}) =>{
     return(
        <div className="m-0 pt-5  pb-5">

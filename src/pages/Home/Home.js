@@ -1,7 +1,7 @@
 
 import Front from '../../components/Front/front.js';
 import Carousel from '../../components/Carousel/carousel.js';
-import PersonalityCarousel from '../../components/PersonalityCarousel/PersonalityCarousel.js';
+import PersonalityCarousel from '../../components/PersonalityCarousel.js';
 import Sponsors from '../../components/Sponsors/sponsors.js';
 const Home = ()=>{
     const data =[
