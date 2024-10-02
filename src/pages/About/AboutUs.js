@@ -14,7 +14,7 @@ const About = () =>{
     ]
     return(
         <div className="m-0 p-0 bgPartners">
-        <Front flag={false}/>
+        <Front flag={false} title={'About Us'}/>
         <Partners array={array}/>
         <PersonalityCarousel personalities={false} team={team} bgColor={'#c2f499'} textColor={'black'} cartColor={'white'} title={'Meet the Team'} titleColor={'black'}/>
         <Vision/>
